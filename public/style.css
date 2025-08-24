@@ -1,51 +1,62 @@
 body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f5f5f5;
-      color: #333;
-    }
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center; /* centraliza o conteúdo principal */
+}
 
-    .container {
-      display: flex;
-      align-items: flex-start;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+.container {
+  display: flex;
+  flex-direction: column; /* organiza verticalmente */
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-    .foto {
-      margin-right: 25px;
-    }
+/* Foto */
+.foto {
+  margin-bottom: 20px;
+}
 
-    .foto img {
-      width: 150px;
-      height: 150px;
-      border-radius: 10px;
-      object-fit: cover;
-      border: 2px solid #444;
-    }
+.foto img {
+  width: 100px;      /* diminuiu o tamanho */
+  height: 100px;
+  border-radius: 50%; /* imagem circular */
+  object-fit: cover;
+  border: 3px solid #444;
+}
 
-    .conteudo {
-      flex: 1;
-    }
+/* Conteúdo */
+.conteudo {
+  width: 100%;
+  max-width: 600px; /* limita a largura do conteúdo */
+}
 
-    .conteudo h2 {
-      margin-top: 0;
-      color: #222;
-    }
+/* Nome */
+.conteudo h2 {
+  margin-top: 0;
+  color: #222;
+}
 
-    section {
-      margin-bottom: 20px;
-    }
+/* Seções */
+section {
+  margin-bottom: 20px;
+}
 
-    h3 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 4px;
-      color: #444;
-    }
+/* Títulos das seções */
+h3 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 4px;
+  color: gold; /* destaque em dourado */
+  font-weight: bold;
+}
 
-    ul {
-      list-style-type: square;
-      margin-left: 20px;
-    }
+/* Listas */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+  text-align: left; /* mantém listas alinhadas à esquerda */
+}
